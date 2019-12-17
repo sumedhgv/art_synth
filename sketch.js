@@ -13,7 +13,7 @@ var beatLength; // in milliseconds
 var loopLength; // in beats
 var nextLoop;  // in millis()
 var loopCount;
-var nextClick; // time for next metronome click
+var nextClick;
 
 var instrument = [];
 var metronomeOn;
@@ -39,7 +39,7 @@ function setup() {
   nextLoop = 0;
   loopCount = 0;
 
-  // a bunch of stuff to set up the sound fx
+
   metronomeEnv = new p5.Envelope();
 
 
@@ -79,7 +79,7 @@ function draw() {
     text( " Waterdrop Echo Synth", canvasWidth/2, 20 );
     text( " By Sumedh Vedanthi", canvasWidth/2, 40 );
     text( "press any key to clear", canvasWidth/2, 60 );
-    //text( "space: toggle metronome", canvasWidth/2, 50 );
+
     text( "click to play a note", canvasWidth/2, canvasHeight - 30 );
 
   text( instrument.length, canvasWidth/2, canvasHeight - 50 );
